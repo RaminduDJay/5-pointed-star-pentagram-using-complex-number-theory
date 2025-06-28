@@ -9,23 +9,16 @@ This project presents a method to generate a **perfect 5-pointed star (pentagram
 ## 🧮 1. Mathematical Foundations  
 
 ### 1.1 Complex Numbers and the Unit Circle  
-A complex number ##z is defined as:  
-$$
-z = x + yi \quad \text{where } i = \sqrt{-1}
-$$  
+A complex number *Z* is defined as:  
+![alt text](image-1.png) 
 Points on the unit circle in the complex plane can be expressed as:  
-$$
-z_k = r \cdot e^{i\theta_k} = r (\cos\theta_k + i \sin\theta_k)
-$$  
+![alt text](image-2.png) 
 For a 5-pointed star:  
-- $ r = 20 $ (radius of the enclosing circle)  
-- $ \theta_k = \frac{2\pi k}{5} - \frac{\pi}{2} $ for $ k = 0, 1, 2, 3, 4 $ (rotated to start from top)  
+![alt text](image-3.png)
 
 ### 1.2 Pentagram Geometry  
 The pentagram is constructed by connecting every second vertex of a regular pentagon. The connection order is:  
-$$
-0 \rightarrow 2 \rightarrow 4 \rightarrow 1 \rightarrow 3 \rightarrow 0
-$$  
+![alt text](image-4.png) 
 This creates intersecting chords that form the star’s internal triangles.
 
 ---
@@ -34,10 +27,7 @@ This creates intersecting chords that form the star’s internal triangles.
 
 ### 2.1 Coordinate Conversion  
 To map complex coordinates to a 2D ASCII grid:  
-$$
-x_{\text{grid}} = \text{round}(x \cdot 1.3 + \frac{\text{grid\_width}}{2}) \\
-y_{\text{grid}} = \text{round}(-y \cdot 0.7 + \frac{\text{grid\_height}}{2})
-$$  
+![alt text](image-5.png) 
 - **X-axis scaling (1.3):** Prevents horizontal compression.  
 - **Y-axis scaling (0.7):** Compensates for taller ASCII characters.  
 
@@ -69,65 +59,7 @@ def draw_line(x0, y0, x1, y1):
 ## 🖼️ 3. Results  
 
 ### 3.1 Final Output  
-```
-                              *                            
-                             ***                           
-                           *     *                         
-                          *       *                        
-                         *         *                       
-                        *           *                      
-                       *             *                     
-                      *               *                    
-                     *                 *                   
-                    *                   *                  
-                   *                     *                 
-                  *                       *                
-                 *                         *               
-                *                           *              
-               *                             *             
-              *                               *            
-             *                                 *           
-            *                                   *          
-           *                                     *         
-          *                                       *        
-         *                                         *       
-        *                                           *      
-       *                                             *     
-      *                                               *    
-     *                                                 *   
-    *                                                   *  
-   *                                                     * 
-  *                                                       * 
- *                                                         *
-  *                                                       * 
-   *                                                     *  
-    *                                                   *   
-     *                                                 *    
-      *                                               *     
-       *                                             *      
-        *                                           *       
-         *                                         *        
-          *                                       *         
-           *                                     *          
-            *                                   *           
-             *                                 *            
-              *                               *             
-               *                             *              
-                *                           *               
-                 *                         *                
-                  *                       *                 
-                   *                     *                  
-                    *                   *                   
-                     *                 *                    
-                      *               *                     
-                       *             *                      
-                        *           *                       
-                         *         *                        
-                          *       *                         
-                           *     *                          
-                             ***                           
-                              *                            
-```
+![alt text](image-6.png)
 
 ### 3.2 Key Enhancements  
 | Feature | Description |
