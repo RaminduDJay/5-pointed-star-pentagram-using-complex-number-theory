@@ -11,14 +11,17 @@ This project presents a method to generate a **perfect 5-pointed star (pentagram
 ### 1.1 Complex Numbers and the Unit Circle  
 A complex number *Z* is defined as:  
 ![alt text](image-1.png) 
+
 Points on the unit circle in the complex plane can be expressed as:  
 ![alt text](image-2.png) 
+
 For a 5-pointed star:  
 ![alt text](image-3.png)
 
 ### 1.2 Pentagram Geometry  
 The pentagram is constructed by connecting every second vertex of a regular pentagon. The connection order is:  
 ![alt text](image-4.png) 
+
 This creates intersecting chords that form the star’s internal triangles.
 
 ---
